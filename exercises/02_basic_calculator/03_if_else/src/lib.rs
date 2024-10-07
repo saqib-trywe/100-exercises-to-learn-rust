@@ -1,6 +1,8 @@
+use std::ops::Rem;
+
 /// Return `true` if `n` is even, `false` otherwise.
 fn is_even(n: u32) -> bool {
-    todo!()
+    return if n.rem(2) == 0 { true } else { false };
 }
 
 #[cfg(test)]
